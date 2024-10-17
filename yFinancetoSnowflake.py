@@ -81,7 +81,7 @@ with DAG(
     tags=['ETL'],
     schedule = '00 17 * * *'
 ) as dag:
-    target_table = "trip_db.raw_data.stock_prices"
+    target_table = "dev.raw_data.stock_price"
     symbol = "AAPL"
 
     data = extract(symbol)
